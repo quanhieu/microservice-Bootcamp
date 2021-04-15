@@ -6,6 +6,8 @@ COPY package.json ./
 
 RUN npm install
 
-COPY ./ ./
+EXPOSE 4001
+
+COPY . .
 
 CMD ["npm", "start"]
